@@ -42,7 +42,7 @@
 
           // Normalize scale.
           const scale = span / bbox.getSize().length();
-          mesh.scale.set(scale, scale, scale);
+          mesh.scale.set(scale, scale*0.9, scale);
 
           // Recenter.
           const offset = bbox.getCenter().multiplyScalar(scale);

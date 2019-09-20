@@ -58,12 +58,16 @@
             <a-asset-item id="animated-asset" src="https://sad-wright-105ff6.netlify.com/cred1/scene.gltf"></a-asset-item>
         </a-assets>
 
-        <a-marker type='barcode' value='7'>
-            <a-box color="yellow"></a-box>
+        <a-marker id="animated-marker" type='barcode' value='7'>
+            <a-entity
+                rotation="270 0 0"
+                gltf-model="#animated-asset"
+                autoscale="2.7">
+            </a-entity>
         </a-marker>
 
         <a-marker id="animated-marker" type='barcode' value='6'>
-            <!-- rotation="90 0 90"  PARA CRED1-->
+            <!-- rotation="270 0 270"  PARA CRED1-->
             <!-- rotation="0 0 90" PARA CRED" -->
             <a-entity
                 rotation="270 0 270"

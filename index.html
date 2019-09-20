@@ -5,15 +5,11 @@
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"> </script>
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene stats embedded arjs='trackingMethod: best; debugUIEnabled: false'>
-    <a-assets>
-      <a-asset-item id="scene" src="scene.gltf">
-    </a-assets>
-
-  	<a-marker preset="hiro">
-      <a-box material='opacity: 0.1'></a-box>
-      <a-gltf-model src="#scene"></a-gltf-model>
-    </a-marker>
-  	<a-entity camera></a-entity>
+    	<a-marker preset="hiro">
+        <a-box material='opacity: 0.1'></a-box>
+        <a-entity gltf-model="scene.gltf" scale="-0.1 -0.1 -0.1"></a-entity>
+      </a-marker>
+    	<a-entity camera></a-entity>
     </a-scene>
   </body>
 </html>

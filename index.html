@@ -42,7 +42,7 @@
 
           // Normalize scale.
           const scale = span / bbox.getSize().length();
-          mesh.scale.set(scale*0.85, scale*1.05, scale);
+          mesh.scale.set(scale*0.9, scale*1.1, scale);
 
           // Recenter.
           const offset = bbox.getCenter().multiplyScalar(scale);
@@ -59,7 +59,7 @@
         </a-assets>
 
         <a-marker type='barcode' value='7'>
-            <a-box position='0 -3 0' color="yellow"></a-box>
+            <a-box position='-3 -3 -3' color="yellow"></a-box>
         </a-marker>
 
         <a-marker id="animated-marker" type='barcode' value='6'>

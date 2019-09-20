@@ -4,7 +4,8 @@
 <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"> </script>
   <body style='margin : 0px; overflow: hidden;'>
-    <a-scene stats embedded arjs='trackingMethod: best; debugUIEnabled: false'>
+    <!--a-scene stats embedded arjs='trackingMethod: best; debugUIEnabled: false'-->
+    <a-scene artoolkit="sourceType: webcam;" embedded="embedded">
     	<a-marker preset="hiro">
         <a-box material='opacity: 0.1'></a-box>
         <a-entity gltf-model="scene.gltf" scale="-0.1 -0.1 -0.1"></a-entity>
